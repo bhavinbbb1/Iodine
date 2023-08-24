@@ -29,5 +29,5 @@ npx cypress run
 Run Cypress in chrome:
 
 ```sh
-npm run  npm run cypress:run:chrome
+npm run cypress:run:chrome
 ```
