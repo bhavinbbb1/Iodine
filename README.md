@@ -34,3 +34,7 @@ Run Cypress in chrome:
 ```sh
 npm run cypress:run:chrome
 ```
+
+## Exceution example (via command line):
+<img width="1017" alt="Screenshot 2023-08-24 at 10 56 08 AM" src="https://github.com/bhavinbbb1/Iodine/assets/16213216/ec850237-01d3-448b-b0c1-e23cca7a19be">
+
