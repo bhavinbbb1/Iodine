@@ -4,6 +4,9 @@
 
 - [Node.js](https://nodejs.org/)
 
+- Clone this repository in your machine. (via command git clone or download)
+
+
 ## Install
 
 ```sh
