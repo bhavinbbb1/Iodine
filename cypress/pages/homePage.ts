@@ -8,6 +8,7 @@ export class homePage extends basePage{
         careers: () => cy.get('ul[id="menu-main-menu-new"]').contains("Careers"),
         company: () => cy.get('ul[id="menu-main-menu-new"]').contains("Company"),
         jobTitle: () => cy.get('table[id="gnewtonCareerHome"]'),
+        jobDesText: 'td[id="gnewtonJobDescriptionText"]'
     }
       
     clickCareers(){
@@ -22,9 +23,8 @@ export class homePage extends basePage{
         this.baseEle.iframe()
         .contains(job)
         .click({force:true});
-        cy.wait(2000)
-        this.baseEle.iframe()
-        .find('td[id="gnewtonJobDescriptionText"]')
+        this.baseEle.iframeWithSub(this.elements.jobDesText)
+        .find(this.elements.jobDesText)
         .should('exist')
     }
 }

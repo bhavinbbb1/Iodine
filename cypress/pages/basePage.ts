@@ -4,7 +4,8 @@ export class basePage{
     }
     baseEle ={
         iframeLocator: 'iframe#gnewtonIframe',
-        iframe: () => cy.getIframeBody(this.baseEle.iframeLocator)
+        iframe: () => cy.getIframeBody(this.baseEle.iframeLocator),
+        iframeWithSub: (subElement: string) => cy.getIframeBodyWithSub(this.baseEle.iframeLocator, subElement)
     }
 }
 

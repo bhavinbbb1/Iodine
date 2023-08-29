@@ -35,3 +35,16 @@ Cypress.Commands.add('getIframeBody', (locator) => {
     .then(cy.wrap)
   }
 );
+
+Cypress.Commands.add('getIframeBodyWithSub', (locator, subElement) => {
+  return  cy.get(locator)
+  .its('0.contentDocument')
+  .should('exist')
+  .its('body')
+  .should('not.be.undefined')
+  .should('be.visible')
+  .and(subElement, {timeout : 30000})
+  .should('be.visible')
+  .then(cy.wrap)
+}
+);
